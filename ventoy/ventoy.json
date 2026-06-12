@@ -1,0 +1,34 @@
+{
+    "control": [
+        { "VTOY_DEFAULT_MENU_MODE": "0" },
+        { "VTOY_FILT_DOT_UNDERSCORE_FILE": "1" }
+    ],
+    "auto_install": [
+        {
+            "image": "/Win11.iso",
+            "template": [
+                "/Templates/autounattend.xml"
+            ],
+            "timeout": 30,
+            "autosel": 1
+        },
+        {
+            "parent": "/ISO/Windows",
+            "template": [
+                "/Templates/autounattend.xml"
+            ],
+            "timeout": 30,
+            "autosel": 1
+        }
+    ],
+    "menu_alias": [
+        {
+            "image": "/Win11.iso",
+            "alias": "Windows 11 (Unbloated / UnattendedWinstall)"
+        },
+        {
+            "image": "/ISO/Windows/Win11.iso",
+            "alias": "Windows 11 (Unbloated / UnattendedWinstall)"
+        }
+    ]
+}
