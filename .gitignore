@@ -1,0 +1,2 @@
+# ISOs don't belong in the repo (too large, some not redistributable)
+*.iso
