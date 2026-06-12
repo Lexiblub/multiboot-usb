@@ -62,29 +62,6 @@ Select the ISO, the respective installer starts. Omarchy installs a complete Arc
 
 Wi-Fi in the live system: `iwctl station wlan0 connect "YOUR-WIFI"`
 
-## Repo structure
-
-```
-multiboot-usb/
-├── README.md
-├── create-stick.bat           ← optional auto-downloader (double-click)
-├── setup-stick.ps1            ← the logic behind it
-├── ventoy/
-│   └── ventoy.json            ← Ventoy config (auto-install, menu names)
-├── Templates/
-│   ├── autounattend.xml       ← Windows debloat (UnattendedWinstall, MIT)
-│   │                            download ONCE yourself, see README-FIRST.txt
-│   ├── README-FIRST.txt
-│   └── LICENSE-UnattendedWinstall.md
-├── shells/
-│   ├── install-shell.sh
-│   └── firstboot-rice.sh
-└── ISO/
-    ├── Windows/   (empty – ISOs don't belong in the repo, see .gitignore)
-    ├── Linux/
-    └── Shells/
-```
-
 ## Known limitations
 
 - **Secure Boot:** On first boot Ventoy asks for one-time key enrollment – or briefly disable Secure Boot in the BIOS.
